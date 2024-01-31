@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/new-port.css">
+    <!-- font-awesome icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../static/images/logo1.jpg" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#developer">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+          
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Welcome To <br> <span>T-Connect </span> <br> Technology</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../static/images/img1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About us</h1>
+                    <p>Welcome to [TCT], where innovation meets design excellence. As a leading UI/UX development hub,
+                        we are dedicated to crafting seamless digital experiences. Our passionate team of developers
+                        merges creativity with cutting-edge
+                        technology to transform ideas into intuitive and visually stunning interfaces.
+                        Elevate your digital presence with [TCT], where user-centric design meets unparalleled expertise
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Designation</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Responsive Design/Collaboration/Information Architecture/Graphic
+                                Design</li>
+                            <li><span>Web Development</span><br>HTML structures,
+                                CSS styles the view,
+                                JavaScript adds interactivity,
+                                Backend logic with server, too.</li>
+                            <li><span>App Development</span><br>Design with UX in mode,
+                                APIs connect, data's load,
+                                Testing ensures a smooth code.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>Designing Web/App interfaces</li>
+                            <li><span>2019 - 2021</span><br>Billing software</li>
+                            <li><span>2018 - 2019</span><br>Responsive web design</li>
+                            <li><span>2017 - 2018</span><br>E-commerce projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Senior Developer</span><br>Full stack Developer</li>
+                            <li><span>Co-ordinator</span><br>Python Developer</li>
+                            <li><span>Co-ordinator</span><br>Web Developer</li>
+                            <li><span>Co-ordinator</span><br>Web Designer</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Elevate your online presence with our expert web design services.
+                        We create visually stunning and user-friendly websites tailored to your brand.
+                        From concept to launch, our team ensures a seamless and engaging online experience.
+                        Boost your business with a professionally crafted website that captivates and converts.</p>
+                    <!-- <a href="./web.html"  id="popup-link">Learm More</a>
+                    <div id="popup-window">
+                        <h1>Pop-up Window</h1>
+                        <p>This is a pop-up window.</p>
+                        <button id="close-button">Close</button>
+                      </div>  -->
+                </div>
+
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>Crafting web experiences with HTML, CSS, and JavaScript magic. Transforming ideas into responsive
+                        designs, one line of code at a time. Building bridges between user interaction and seamless
+                        functionality.
+                        Elevate your online presence with innovative web development</p>
+                    <!-- <a href="./web.html"  id="popup-link">Learm More</a>
+                    <div id="popup-window">
+                        <h1>Pop-up Window</h1>
+                        <p>This is a pop-up window.</p>
+                        <button id="close-button">Close</button>
+                      </div>  -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Responsive Design</h2>
+                    <p>Responsive design adapts effortlessly,
+                        CSS media queries ensure elements mesh,
+                        Viewport flexibility, content adjusts gracefully,
+                        One codebase, devices all cherish.</p>
+                    <!-- <a href="./web.html"  id="popup-link">Learm More</a>
+                    <div id="popup-window">
+                        <h1>Pop-up Window</h1>
+                        <p>This is a pop-up window.</p>
+                        <button id="close-button">Close</button>
+                      </div>  -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Branding Identity</h2>
+                    <p>Branding Identini, a beacon of distinction,
+                        Where visions take flight, forging recognition.
+                        In design's embrace, a unique rendition,
+                        A symbol that resonates, leaving a lasting mission</p>
+                    <!-- <a href="">Learm More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Creative Design</h2>
+                    <p>Creative design, an artful symphony unfolds,
+                        Brushstrokes of innovation, stories to be told.
+                        Colors dance with purpose, a visual narrative bold,
+                        In the canvas of imagination, endless possibilities enfold.
+                        A masterpiece emerges, a testament to creativity untold</p>
+                    <!-- <a href="">Learm More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-life-ring"></i>
+                    <h2>Quick Support</h2>
+                    <p>Quick support, a lifeline on demand,
+                        Swift responses, a helping hand.
+                        Problems dissolve at its command,
+                        Efficiency and care, the service grand</p>
+                    <!-- <a href="">Learm More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../static/images/ecommerce-website-banner.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-commerce projects</h3>
+                        <p>An e-commerce project involves creating an online platform for buying and selling goods or
+                            services, providing users with a seamless digital shopping experience to browse products,
+                            make purchases, and facilitate secure transactions.</p>
+                        <a href="https://thejusweety.pythonanywhere.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../static/images/financial-portfolio.jpg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio Creation</h3>
+                        <p>Our billing project aims to streamline financial transactions and enhance
+                            invoicing efficiency for improved financial management </p>
+                        <a href="https://theju1997.github.io/MyPortfolio/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../static/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>online shop App</h3>
+                        <p>The project typically encompasses features such as product catalogs, shopping carts, payment
+                            gateways,
+                            and order tracking for a seamless online retail experience.</p>
+                        <a href="https://thejusweety.pythonanywhere.com/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See&nbsp;More</a>
+        </div>
+    </div>
+
+    <!-- block -->
+    <div id="block">
+        <div class="container">
+            <div class="block">
+                <h1>Contact Us For Your Next Project</h1>
+                <a href="#contact" class="btn btn3">CONTACT US NOW!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial -->
+
+    <div id="developer">
+        <div class="container">
+            <h1 class="sub-title">Developers</h1>
+            <div class="developer-list">
+                <div>
+
+                    <img src="../static/images/Theju.jpg" width="100" alt="image">
+                    <p>Full Stack Developer with expertise in both front-end and back-end technologies, adept at
+                        creating seamless,
+                        scalable web applications for optimal user experiences</p>
+                    <h1>Thejaswini TR</h1>
+                    <h2>Python-Fullstack Developer</h2>
+                </div>
+                <div>
+                    <img src="../static/images/Avinash-3.jpg" width="100" alt="image">
+                    <p> Python developer with expertise in creating efficient and scalable solutions. Proficient in
+                        full-stack development,
+                        adept at problem-solving and optimizing code for enhanced performance</p>
+                    <h1>Avinash </h1>
+                    <h2>Python Developer</h2>
+                </div>
+                <div>
+                    <img src="../static/images/darshan.jpg" width="100" alt="Image">
+                    <p>web developer with a knack for user-friendly websites through a mastery of HTML, CSS, and
+                        JavaScript."
+
+                        "Innovative web developer dedicated to transforming ideas into seamless online experiences,
+                        in front-end technologies and responsive design</p>
+                    <h1>Darshan </h1>
+                    <h2>Web Developer</h2>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-regular fa-envelope"></i>thejaswinitr@gmail.com </p>
+                    <p><i class="fa-regular fa-envelope"></i> darshan0106gowda@gmail.com</p>
+                    <p><i class="fa-regular fa-envelope"></i> avinashshpujari2244@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"> </i> +91 8748976574</p>
+                    <p><i class="fas fa-phone-square-alt"> </i> +91 6360041580</p>
+                    <p><i class="fas fa-phone-square-alt"> </i> +91 7026943730 </p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <!-- <a href="static/images/Avinash-Resume.pdf" download class="btn btn2">Download CV</a> -->
+
+                </div>
+                <div class="contact-right">
+                    <form action="" method="POST">{% csrf_token %}
+                        {% include 'message.html' %}
+                        <input type="text" name="name" id="" placeholder="Your Name" required>
+                        <input type="email" name="email" id="" placeholder="Your Email" required>
+                        <input type="number" name="mobile" id="" placeholder="Your contact number" required>
+                        <textarea name="message" id="" cols="35" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <h1>T Connect Technology</h1>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-life-ring"></i></a></li>
+        </ul>
+        <p>Contact Us <i class="fas fa-heart"></i> for more information</p>
+    </div>
+
+</body>
+
+<script>
+    // about section 
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<!-- jquery for msg timeout -->
+<script>
+    $(function() {
+        setTimeout(function() { $("#msg").fadeOut(1500); }, 7000)
+        
+        })
+</script>
+
+ 
+</html>
